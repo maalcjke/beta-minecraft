@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  minecraft:
+    build: .
+    container_name: mc-beta-173
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./opt/minecraft_server:/data
+    restart: unless-stopped
