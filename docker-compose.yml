@@ -2,8 +2,8 @@ version: "3.8"
 
 services:
   minecraft:
-    image: eclipse-temurin:21-jre
-    container_name: mc-1-21-2
+    image: eclipse-temurin:25-jre
+    container_name: mc-26-1-2
     working_dir: /data
     command: sh -c "echo 'eula=true' > eula.txt && java -Xms1G -Xmx2G -jar server.jar nogui"
     ports:
